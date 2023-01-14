@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.urls import path, include
-from .views import scrap
-urlpatterns = [
+from .views import Scrapview
 
-    path('scr',scrap.as_view(),'scarp'),
+urlpatterns = [
+    path('scr/',Scrapview.as_view(),name='scrapview')
 ]
